@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Table</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav>
+        <div  class="logo">
+            <img src="Images/nike logo.jpg" alt="nike logo">
+        </div>
+        <ul class=" menu">
+            <li><a href="index.html" class="link">HOME</a></li>
+            <li>  <a href="about us.html" class="link">ABOUT US</a></li>
+            <li><a href="contact.html" class="link">CONTACT</a></li>
+        </ul> 
+    </nav>
+
+    <main>
+        <h2>Our Latest Products</h2>
+        <div class="products">
+          <!-- Product 1 -->
+          <div class="product-card">
+            <img src="Images/1.png" alt="Product 1">
+            <h3>Nike Viridian Vapor</h3>
+            <p>A lightweight, breathable mesh upper keeps feet cool and dry.</p>
+        
+          </div>
+    
+          <!-- Product 2 -->
+          <div class="product-card">
+            <img src="Images/2.png" alt="Product 2">
+            <h3>Nike Vapor Breeze</h3>
+            <p>  engineered for dynamic performance 
+                and sleek style, perfect for athletes 
+                 and casual wearers alike. </p>
+           
+          </div>
+    
+          <!-- Product 3 -->
+          <div class="product-card">
+            <img src="Images/3.png" alt="Product 3">
+            <h3>Nike Celestial Dawn</h3>
+            <p> A clean, streamlined silhouette that complements any outfit.</p>
+          </div>
+    
+          <!-- Product 4 -->
+          <div class="product-card">
+            <img src="Images/4.png" alt="Product 4">
+            <h3>NIKE Pink Spark</h3>
+            <p>the shoes are so bright and cheerful.</p>
+            
+          </div>
+
+          <!-- Product 5 -->
+          <div class="product-card">
+            <img src="Images/5.png" alt="Product 5">
+            <h3>Nike Crimson Impulse</h3>
+            <p>A snug, adaptive fit for maximum support and comfort.</p>
+            
+          </div>
+
+          <!-- Product 6 -->
+          <div class="product-card">
+            <img src="Images/6.png" alt="Product 6">
+            <h3>Nike Cosmic Pulse</h3>
+            <p>Subtle reflective accents enhance visibility in low-light conditions.</p>
+            
+          </div>
+
+          <!-- Product 7 -->
+          <div class="product-card">
+            <img src="Images/7.png" alt="Product 7">
+            <h3>Nike Kiddo Sprinter</h3>
+            <p> designed for active little feet, 
+                combining comfort, style, and durability. </p>
+            
+          </div>
+
+          <!-- Product 8 -->
+          <div class="product-card">
+            <img src="Images/8.png" alt="Product 8">
+            <h3>Nike Neon Jumpers</h3>
+            <p>A flexible outsole promotes natural foot movement.</p>
+            
+          </div>
+        </div>
+      </main>
+      
+    <div class="Order">
+        <h2>ORDER NOW!</h2>
+        <table id="myTable">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Size</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total Price</th> <!-- Added Total Price column -->
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr data-product="PR1">
+                <td><img src="Images/1.png" alt="Product 1"> <br>
+                <h3>Nike Viridian Vapor</h3>
+                    
+                </td>
+                <td>
+                    <select name="size">
+                        <option value="35">36</option>
+                        <option value="36">37</option>
+                        <option value="37">38</option>
+                        <option value="38">39</option>
+                    </select>
+                </td>
+                <td>P 1,299</td>
+                <td class="value">0</td>
+                <td class="total-price">P 0</td> <!-- Added Total Price cell -->
+                <td>
+                    <button onclick="increaseValue(this)">+</button>
+                    <button onclick="decreaseValue(this)">-</button>
+                </td>
+            </tr>
+            
+            <tr data-product="PR2">
+                <td><img src="Images/2.png" alt="Product 2"> <br>
+                <h3>Nike Vapor Breeze</h3>
+                    
+                </td>
+                <td>
+                    <select name="size">
+                        <option value="36">36</option>
+                        <option value="37">37</option>
+                        <option value="38">38</option>
+                        <option value="39">39</option>
+                    </select>
+                </td>
+                <td>P 1,199</td>
+                <td class="value">0</td>
+                <td class="total-price">P 0</td>
+                <td>
+                    <button onclick="increaseValue(this)">+</button>
+                    <button onclick="decreaseValue(this)">-</button>
+                </td>
+            </tr>
+            
+            <tr data-product="PR3">
+                <td><img src="Images/3.png" alt="Product 3"> <br>
+                <h3>Nike Celestial Dawn</h3>
+                   
+                </td>
+                <td>
+                    <select name="size">
+                        <option value="36">36</option>
+                        <option value="37">37</option>
+                        <option value="38">38</option>
+                        <option value="39">39</option>
+                    </select>
+                </td>
+                <td>P 1,299</td>
+                <td class="value">0</td>
+                <td class="total-price">P 0</td>
+                <td>
+                    <button onclick="increaseValue(this)">+</button>
+                    <button onclick="decreaseValue(this)">-</button>
+                </td>
+            </tr>
+
+            <tr data-product="PR4">
+                <td><img src="Images/4.png" alt="Product 4"> <br>
+                <h3>NIKE Pink Spark</h3>
+                    
+                </td>
+                <td>
+                    <select name="size">
+                        <option value="36">36</option>
+                        <option value="37">37</option>
+                        <option value="38">38</option>
+                        <option value="39">39</option>
+                    </select>
+                </td>
+                <td>P 1,299</td>
+                <td class="value">0</td>
+                <td class="total-price">P 0</td>
+                <td>
+                    <button onclick="increaseValue(this)">+</button>
+                    <button onclick="decreaseValue(this)">-</button>
+                </td>
+            </tr>
+
+            <tr data-product="PR5">
+                <td><img src="Images/5.png" alt="Product 5"> <br>
+                <h3>Nike Crimson Impulse</h3>
+                    
+                </td>
+                <td>
+                    <select name="size">
+                        <option value="36">36</option>
+                        <option value="37">37</option>
+                        <option value="38">38</option>
+                        <option value="39">39</option>
+                    </select>
+                </td>
+                <td>P 1,299</td>
+                <td class="value">0</td>
+                <td class="total-price">P 0</td>
+                <td>
+                    <button onclick="increaseValue(this)">+</button>
+                    <button onclick="decreaseValue(this)">-</button>
+                </td>
+            </tr>
+
+            <tr data-product="PR6">
+                <td><img src="Images/6.png" alt="Product 6"> <br>
+                <h3>Nike Cosmic Pulse</h3>
+                    
+                </td>
+                <td>
+                    <select name="size">
+                        <option value="36">36</option>
+                        <option value="37">37</option>
+                        <option value="38">38</option>
+                        <option value="39">39</option>
+                    </select>
+                </td>
+                <td>P 1,299</td>
+                <td class="value">0</td>
+                <td class="total-price">P 0</td>
+                <td>
+                    <button onclick="increaseValue(this)">+</button>
+                    <button onclick="decreaseValue(this)">-</button>
+                </td>
+            </tr>
+
+            <tr data-product="PR7">
+                <td><img src="Images/7.png" alt="Product 7"> <br>
+                <h3>Nike Kiddo Sprinter</h3> 
+                </td>
+                <td>
+                    <select name="size">
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                    </select>
+                </td>
+                <td>P 999</td>
+                <td class="value">0</td>
+                <td class="total-price">P 0</td>
+                <td>
+                    <button onclick="increaseValue(this)">+</button>
+                    <button onclick="decreaseValue(this)">-</button>
+                </td>
+            </tr>
+
+            <tr data-product="PR8">
+                <td><img src="Images/8.png" alt="Product 8"> <br>
+                <h3>Nike Neon Jumpers</h3>
+                    
+                </td>
+                <td>
+                    <select name="size">
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                    </select>
+                </td>
+                <td>P 999</td>
+                <td class="value">0</td>
+                <td class="total-price">P 0</td>
+                <td>
+                    <button onclick="increaseValue(this)">+</button>
+                    <button onclick="decreaseValue(this)">-</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    <button id="orderButton" onclick="orderAllItems()">Order</button>
+
+    <script src="script.js"></script>
+
+<footer>
+        <div>
+            <h4>Follow our Social media acounts:</h4>
+            <div class="social_media">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+        <p>&copy;NIKE SINCE 1964.</p>
+</footer>
+    
+</body>
+</html>
