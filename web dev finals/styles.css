@@ -1,0 +1,399 @@
+body{
+    margin: 0;
+    background-image: url('Images/bground.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    animation: fadeInUp 1s ease-out forwards;
+}
+/*entrance animation*/
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(50px); /* start from bottom */
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0); /* end at original position */
+  }
+}
+
+nav .logo img{
+  width: 150px;
+  height: 120px;
+}
+
+nav{
+  border: solid 2px silver;
+  background-color: #030303;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.menu{
+    display: flex;
+    padding-left: 40rem;
+    list-style-type: none;
+}
+
+nav li{
+    margin-left: 30px;
+    padding-bottom: 20px;
+    margin-right: 20px;
+}
+
+li{
+  color: #074057;
+}
+
+/*front page container*/
+.container{
+  display: flex;
+  height: 500px;
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+
+}
+
+.left_part{
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  margin-left: 3rem;
+  padding: 50px;
+  color: #f7f1f1;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*animation for changing color*/
+@keyframes colorChange {
+  0% { color: black; }
+  25% { color: white; }
+  50% { color: black; }
+  75% { color: white; }
+  100% { color: black; }
+}
+
+#changing_color{
+  font-family:  Futura Condensed Extra Black;
+  font-size: larger;
+  font-weight: bold;
+  animation: colorChange 1.5s infinite;
+}
+
+.right_part{
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-left: 150px;
+
+}
+
+h1{
+  text-align: center;
+}
+
+p{
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#about-p2{
+  text-align: center;    /* Justify text */
+  margin: 0 auto;         /* Center the paragraph block */
+  padding: 20px;          /* Add some padding */
+}
+
+
+/*pop over log in*/
+@keyframes slideInLeft {
+  0% { transform: translateX(-100%); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
+#my-popover{
+  background-color: rgb(46, 42, 42);
+  border-radius: 15px;
+  animation: slideInLeft 1s ease-out forwards;
+
+}
+
+/* login*/
+.form-container {
+  margin: auto;
+  background: rgba(255, 255, 255, 0.2); 
+  border-radius: 15px;
+  padding: 2rem;
+  width: 500px;
+  animation: shine 1s infinite ease-in-out;
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: white;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 30px;
+  border: 1px solid rgb(17, 1, 1);
+  border-radius: 5px;
+}
+
+.login-btn{
+  margin-left: 190px;
+}
+
+  a{
+    text-decoration: none;
+}
+
+
+/*all button*/
+button{
+  background-color: #515355; 
+  color: white;             
+  padding: 15px 32px;      
+  text-align: center;              
+  border-radius: 4px;     
+  cursor: pointer;  
+}
+
+button:hover {
+  background-color: #1d2122;
+}
+
+.link{
+  color: aliceblue;
+}
+
+.link:hover{
+  color: rgb(151, 142, 142);
+}
+
+/*shop*/
+main {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+main h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+
+/* product grid */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 50px;
+  padding: 5px;
+  justify-items: center;
+ 
+}
+
+.product-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+  cursor: pointer;
+}
+
+.product-card:hover{
+ 
+  transform: translateY(-10px);
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+
+.product-card h3 {
+  margin: 10px 0;
+  font-size: 1.2em;
+}
+
+.product-card p {
+  margin: 5px 0;
+  font-size: 1.1em;
+  color: #333;
+}
+
+.product-card p:hover {
+  color: #2980b9;
+}
+
+
+
+table {
+  width: 100%;
+  margin-bottom: 50px;
+  border-collapse: collapse;
+  
+}
+
+th, td {
+  color: rgb(250, 244, 244);
+  border: 1px solid #faf8f8;
+  padding: 15px;
+  text-align: center;
+  
+}
+
+th {
+  background-color: gray;
+  color: rgb(250, 247, 247);
+}
+
+td img {
+  width: 150px;
+  height: 150px; 
+  border-radius: 5%;
+}
+
+td p {
+  font-size: 14px; 
+  color: #faf7f7; 
+}
+
+td:hover {
+  background-color: #4c4f502a;
+}
+
+
+#orderButton {
+  margin-top: 10px;
+  margin-bottom: 50px;
+  padding: 10px 20px;
+  margin-left: 600px;
+  font-size: 16px;
+  background-color: #515355; 
+  border-radius: 5px; 
+  
+}
+
+#orderButton:hover {
+  background-color: #1d2122;
+  
+}
+/*order receipt */
+#receiptSection{
+  margin-top: 20px; 
+  padding: 10px;
+  border: 1px solid rgb(32, 37, 68);
+  background-color: #ffffff;
+  width: 400px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+/*animation for border*/
+@keyframes shine {
+  0% {
+      box-shadow: 0 0 5px 0 gray, 0 0 10px 0 gray;
+  }
+  50% {
+      box-shadow: 0 0 13px 5px gray, 0 0 10px 5px gray;
+  }
+  100% {
+      box-shadow: 0 0 5px 0 gray, 0 0 10px 0 gray;
+  }
+}
+
+/*contact*/
+.contact-container{
+  color: aliceblue;
+   margin: auto;
+   margin-top: 65px;
+   margin-bottom: 130px;
+   background: rgba(61, 61, 61, 0.404);
+   border-radius: 15px;
+   padding: 2rem;
+   backdrop-filter: blur(456-7890); 
+   width: 400px;
+   animation: shine 1s infinite ease-in-out;
+
+}
+
+#about-p{
+      text-align: center; 
+      width: 80%;             
+      margin: 0 auto;         
+      background-color: #6b6969;
+      padding: 20px;        
+      border: 1px solid #ccc; 
+}
+
+/*footer*/
+footer{
+  background-color: black;
+  border: solid 2px silver;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h4{
+  color: #ccc;
+  
+}
+
+.social_media{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa {
+  padding: 15px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+
+.fa-facebook {
+ 
+  color: white;
+}
+
+
+.fa-twitter {
+ 
+  color: white;
+}
+
+.fa-instagram {
+
+  color: white;
+}
+
