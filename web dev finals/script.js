@@ -1,12 +1,12 @@
    // Define product prices
    const prices = { PR1: 1299, PR2: 1199, PR3: 1199, PR4: 1299, PR5: 1299, PR6: 1299, PR7: 999, PR8: 999 };
 
-   // Increase or decrease quantity and update total price
+   // increase or decrease quantity and update total price
    function changeQuantity(button, change) {
        const row = button.closest('tr');
        const quantityCell = row.querySelector('.value');
        let quantity = parseInt(quantityCell.textContent);
-       quantity = Math.max(0, quantity + change);  // Prevent negative quantities
+       quantity = Math.max(0, quantity + change);  // start from 0
        quantityCell.textContent = quantity;
        row.querySelector('.total-price').textContent = `P ${prices[row.dataset.product] * quantity}`;
    }
