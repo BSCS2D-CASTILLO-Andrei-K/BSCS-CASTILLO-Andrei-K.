@@ -10,17 +10,17 @@
 <body>
 
     <nav>
-        <div  class="logo">
+        <div class="logo">
             <img src="Images/nike logo.jpg" alt="nike logo">
         </div>
-        <ul class=" menu">
+        <ul class="menu">
             <li><a href="index.html" class="link">HOME</a></li>
             <li><a href="shop_page.html" class="link">SHOP</a></li>
             <li><a href="about us.html" class="link">ABOUT US</a></li>
             <li><a href="contact.html" class="link">CONTACT</a></li>
-
         </ul> 
     </nav>
+
     <div class="Order">
         <table id="myTable">
         <thead>
@@ -29,7 +29,7 @@
                 <th>Size</th>
                 <th>Price</th>
                 <th>Quantity</th>
-                <th>Total Price</th> <!-- Added Total Price column -->
+                <th>Total Price</th>
                 <th>Actions</th>
             </tr>
         </thead>
@@ -52,8 +52,8 @@
                 <td class="value">0</td>
                 <td class="total-price">P 0</td> <!-- Added Total Price cell -->
                 <td>
-                    <button onclick="increaseValue(this)">+</button>
-                    <button onclick="decreaseValue(this)">-</button>
+                    <button onclick="changeQuantity(this, 1)">+</button>
+                    <button onclick="changeQuantity(this, -1)">-</button>
                 </td>
             </tr>
             
@@ -74,8 +74,8 @@
                 <td class="value">0</td>
                 <td class="total-price">P 0</td>
                 <td>
-                    <button onclick="increaseValue(this)">+</button>
-                    <button onclick="decreaseValue(this)">-</button>
+                    <button onclick="changeQuantity(this, 1)">+</button>
+                    <button onclick="changeQuantity(this, -1)">-</button>
                 </td>
             </tr>
             
@@ -96,8 +96,8 @@
                 <td class="value">0</td>
                 <td class="total-price">P 0</td>
                 <td>
-                    <button onclick="increaseValue(this)">+</button>
-                    <button onclick="decreaseValue(this)">-</button>
+                    <button onclick="changeQuantity(this, 1)">+</button>
+                    <button onclick="changeQuantity(this, -1)">-</button>
                 </td>
             </tr>
 
@@ -118,8 +118,8 @@
                 <td class="value">0</td>
                 <td class="total-price">P 0</td>
                 <td>
-                    <button onclick="increaseValue(this)">+</button>
-                    <button onclick="decreaseValue(this)">-</button>
+                    <button onclick="changeQuantity(this, 1)">+</button>
+                    <button onclick="changeQuantity(this, -1)">-</button>
                 </td>
             </tr>
 
@@ -140,8 +140,8 @@
                 <td class="value">0</td>
                 <td class="total-price">P 0</td>
                 <td>
-                    <button onclick="increaseValue(this)">+</button>
-                    <button onclick="decreaseValue(this)">-</button>
+                    <button onclick="changeQuantity(this, 1)">+</button>
+                    <button onclick="changeQuantity(this, -1)">-</button>
                 </td>
             </tr>
 
@@ -162,8 +162,8 @@
                 <td class="value">0</td>
                 <td class="total-price">P 0</td>
                 <td>
-                    <button onclick="increaseValue(this)">+</button>
-                    <button onclick="decreaseValue(this)">-</button>
+                    <button onclick="changeQuantity(this, 1)">+</button>
+                    <button onclick="changeQuantity(this, -1)">-</button>
                 </td>
             </tr>
 
@@ -183,8 +183,8 @@
                 <td class="value">0</td>
                 <td class="total-price">P 0</td>
                 <td>
-                    <button onclick="increaseValue(this)">+</button>
-                    <button onclick="decreaseValue(this)">-</button>
+                    <button onclick="changeQuantity(this, 1)">+</button>
+                    <button onclick="changeQuantity(this, -1)">-</button>
                 </td>
             </tr>
 
@@ -205,13 +205,14 @@
                 <td class="value">0</td>
                 <td class="total-price">P 0</td>
                 <td>
-                    <button onclick="increaseValue(this)">+</button>
-                    <button onclick="decreaseValue(this)">-</button>
+                    <button onclick="changeQuantity(this, 1)">+</button>
+                    <button onclick="changeQuantity(this, -1)">-</button>
                 </td>
             </tr>
         </tbody>
     </table>
     </div>
+
     <button id="orderButton" onclick="orderAllItems()">Order</button>
 
     <div id="receiptSection" style="display:none;">
@@ -221,15 +222,16 @@
 
     <script src="script.js"></script>
 
-<footer>
+    <footer>
         <div>
-            <h4>Follow our Social media acounts:</h4>
+            <h4>Follow our Social media accounts:</h4>
             <div class="social_media">
                 <a href="#" class="fa fa-facebook"></a>
                 <a href="#" class="fa fa-twitter"></a>
                 <a href="#" class="fa fa-instagram"></a>
             </div>
-        <p>&copy;NIKE SINCE 1964.</p>
-</footer>
+            <p>&copy;NIKE SINCE 1964.</p>
+        </div>
+    </footer>
 </body>
 </html>
