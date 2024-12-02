@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Alfonso <span>.hub</span></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="shop.html" class="fa">&#xf07a; SHOP</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="product-list">
+            <article class="product-item">
+                <img src="images/Alfonso XO.jpg" alt="Alfonso XO">
+                <h2>Alfonso Light Small</h2>
+                <p>P 500</p>
+                
+                <!-- Quantity controls -->
+                <div class="quantity-controls">
+                    <button class="quantity-btn" id="decrease-1">-</button>
+                    <input type="text" id="quantity-1" value="1" readonly>
+                    <button class="quantity-btn" id="increase-1">+</button>
+                </div>
+                
+                <!-- Add to cart button -->
+                <button class="add-to-cart" id="add-to-cart-1">Add to Cart</button>
+            </article>
+
+            <article class="product-item">
+                <img src="images/Alfonso Platinum 1L.jpg" alt="Alfonso Platinum 1L">
+                <h2>Alfonso Platinum 1L</h2>
+                <p>P 500</p>
+                
+                <!-- Quantity controls -->
+                <div class="quantity-controls">
+                    <button class="quantity-btn" id="decrease-2">-</button>
+                    <input type="text" id="quantity-2" value="1" readonly>
+                    <button class="quantity-btn" id="increase-2">+</button>
+                </div>
+                
+                <!-- Add to cart button -->
+                <button class="add-to-cart" id="add-to-cart-2">Add to Cart</button>
+            </article>
+
+            <article class="product-item">
+                <img src="images/Alfonso Platinum 1.75L.jpg" alt="Alfonso Platinum 1.75L">
+                <h2>Alfonso Platinum 1.75L</h2>
+                <p>P 500</p>
+                
+                <!-- Quantity controls -->
+                <div class="quantity-controls">
+                    <button class="quantity-btn" id="decrease-3">-</button>
+                    <input type="text" id="quantity-3" value="1" readonly>
+                    <button class="quantity-btn" id="increase-3">+</button>
+                </div>
+                
+                <!-- Add to cart button -->
+                <button class="add-to-cart" id="add-to-cart-3">Add to Cart</button>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Alfonso.hub. All Rights Reserved.</p>
+            <a href="#">Privacy Policy</a></li>
+            <a href="#">Terms of Service</a></li>
+            <a href="#">Contact</a>
+        </div>
+    </footer>
+
+    <div id="cart-message" class="fa">&#xf07a; Item added to cart!</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
